@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_receiver"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:paddingLeft="15dp"
+    android:paddingRight="60dp"
+    android:paddingVertical="10dp">
+
+    <TextView
+        android:id="@+id/message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/message_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_name"
+        android:layout_alignLeft="@+id/message_name"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/chat_round_receiver"
+        android:elevation="2dp"
+        android:padding="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Hello"
+        android:textColor="#212121"
+        android:textSize="18sp" />
+</RelativeLayout>
